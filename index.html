@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我要領貨</title>
+  <!-- CSS and JS will be inserted here (omitted for brevity) -->
+</head>
+<body>
+  <h1>📦 我要領貨</h1>
+  <button class="btn" onclick="loadProducts()">開始領貨</button>
+  <button class="btn" onclick="loadHistory()">查詢歷史紀錄</button>
+  <button class="btn" onclick="loadManage()">管理商品與人員</button>
+  <div id="product-list"></div>
+  <div id="details-form" class="form-section">
+    <h2 id="selected-product"></h2>
+    <label for="qty">數量</label>
+    <input type="number" id="qty" min="1" required>
+    <label for="person">領貨人</label>
+    <select id="person"></select>
+    <button class="btn" onclick="submitRecord()">送出</button>
+    <div class="record-message" id="record-message"></div>
+  </div>
+  <div id="history-section"></div>
+  <div id="manage-section"></div>
+</body>
+</html>
